@@ -23,7 +23,7 @@ const Carousel = ({ startingOptions, initialSpeed }) => {
       carouselInterval.current = setInterval(() => {
         setCurrentIndex((current) => {
           if (currentIndex >= options.length - 1) {
-            clearInterval(carouselInterval);
+            clearInterval(carouselInterval.current);
             selectSfx.current.play();
             return 0;
           } else {
