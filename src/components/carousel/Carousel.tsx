@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useRef } from "react";
-import selectSound from "picker-wheel/assets/blipSelect.wav";
-import stopSound from "picker-wheel/assets/synth.wav";
+import selectSound from "../../assets/blipSelect.wav";
+import stopSound from "../../assets/synth.wav";
 import styled from "styled-components";
 
 const Carousel = ({ startingOptions, initialSpeed }) => {
