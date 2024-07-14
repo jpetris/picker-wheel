@@ -6,7 +6,7 @@ const Option = ({ title, bgImage }: { title: string; bgImage: string }) => {
       <TitleContainer>
         <Title>{title}</Title>
       </TitleContainer>
-      <WonderImage src={bgImage} alt="" />
+      <WonderImage src={`/picker-wheel${bgImage}`} alt={`${title}, one of the ancient seven wonders`} />
     </Container>
   );
 };
